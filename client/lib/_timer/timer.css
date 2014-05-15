@@ -1,0 +1,48 @@
+.radialtimer {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  margin: -50px 0 0 -50px;
+}
+.radialtimer .n {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  font-family: "Sans-serif;";
+  font-size: 30px;
+  color: #888888;
+}
+.radialtimer .slice {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  clip: rect(0px, 100px, 100px, 50px);
+}
+.radialtimer .slice.nc {
+  clip: rect(auto, auto, auto, auto);
+}
+.radialtimer .slice .q {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border: 16px white solid;
+  border-radius: 50%;
+  clip: rect(0px, 50px, 50px, 0px);
+  z-index: 2;
+}
+.radialtimer .slice .pie {
+  border: 15px #6bc967 solid;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  clip: rect(0px, 50px, 100px, 0px);
+  border-radius: 50%;
+  transition: all 1s linear;
+  z-index: 1;
+}

@@ -53,7 +53,7 @@ window.radialTimer = function () {
 
 var Timer;
 
-$(document).ready(function() {
+Template.timer.rendered = function() {
 	Timer = new radialTimer();
 	Timer.init("timer", 20);
-});
+};
