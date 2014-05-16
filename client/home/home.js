@@ -13,10 +13,15 @@ Template.home.events({
     var context = canvas.getContext('2d')
     context.drawImage(video[0], 0, 0, video.width(), video.height())
 
+    if (!Meteor.user()) {
+      return alert("PLEASE LOGIN TO SNAPCAT to send snap")
+    }
+
     console.log(canvas.toDataURL())
     Snaps.insert({
       selfieSrc: canvas.toDataURL(),
-      to: $("[type=email]").val(),
+      to: $("#controls [type=email]").val(),
+      from: Meteor.user().emails[0].address,
       ttl: 5,
       createdAt: Date.now()
     })

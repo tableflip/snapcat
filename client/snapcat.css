@@ -8,12 +8,12 @@ html, body, video, canvas {
 canvas {
   visibility: hidden;
 }
-input[type=email] {
+#controls input[type=email] {
   width: 300px;
   margin-left: -150px;
   bottom: 80px;
 }
-input {
+#controls input {
   position: fixed;
   width: 100px;
   height: 30px;

@@ -1,6 +1,8 @@
 <template name="view">
   <h1>VIEW!</h1>
+  <ol>
   {{#each snaps}}
-    <img src="{{selfieSrc}}">
+    <li><a href="/snap/{{_id}}">New snap from {{from}}</a></li>
   {{/each}}
+  </ol>
 </template>
