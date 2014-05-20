@@ -1,5 +1,4 @@
-slingshot
-=========
+# snapcat
 
 **A minimally viable selfie sharing service**
 
